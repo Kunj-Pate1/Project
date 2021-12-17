@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Template</title>  
+</head>
+<body background="img/bg.jpg" style="color:white">
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2" style="color:gold;">Details</h1>
+    <a href="home.html"><p class="ReZume" style=" color: #6C6A6A; top: 1px; left: 40px; ">Re</p>
+    <p1 class="ReZume" style="color: #ff0000; top:1px; left: 88px; ">Z</p1>
+    <p2 class="ReZume" style="color:#6C6A6A; top:1px; left: 114px;">ume</p2></a>
+
+    <div class="row">
+
+        <div class="col-md-6 mt-4">
+
+            <h3>Personal Information</h3>
+
+            <div class="form-group">
+                <label for="nameField">Name</label>
+                <input type="text" id="nameField" placeholder="Enter here" class="form-control">
+            </div>
+            <div class="form-group mt-3">
+                <label for="contactField">Contact</label>
+                <input type="number" id="contactField" placeholder="Enter here" class="form-control">
+            </div>
+            <div class="form-group mt-3">
+                <label for="addressField">Address</label>
+                <textarea type="text" id="addressField" placeholder="Enter here" class="form-control" rows="1"></textarea>     
+            </div>
+            <p class="text-secondary my-3">Important Links</p>
+            <div class="form-group mt-3">
+                <label for="linkedField">LinkedIn</label>
+                <input type="text" id="linkedField" placeholder="Enter here" class="form-control">
+            </div>
+            <div class="form-group mt-3">
+                <label for="gField">GitHub</label>
+                <input type="text" id="gField" placeholder="Enter here" class="form-control">
+            </div>
+            <div class="form-group mt-3">
+                <label for="fbField">Facebook</label>
+                <input type="text" id="fbField" placeholder="Enter here" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-6 mt-4">
+             
+            <h3>Professional Information</h3>
+
+            <div class="form-group mt-2">
+                <label for="">Email ID</label>
+                <textarea id="eField" placeholder="Enter here" class="form-control " rows="1"></textarea>     
+            </div>
+
+    <!--        <div class="form-group mt-3" id="l">
+                <label for="">Languages</label>
+                <textarea  placeholder="Enter here" class="form-control sField" rows="1"></textarea>     
+                <div class="container text-center mt-2" id="lAddButton">
+                    <button onclick="addNewLField()" class="btn btn-danger btn-sm">Add</button>
+                </div>
+            </div>
+    -->
+            <div class="form-group mt-3" id="s">
+                <label for="">Skills</label>
+                <textarea  placeholder="Enter here" class="form-control sField" rows="1"></textarea>     
+                <div class="container text-center mt-2" id="sAddButton">
+                    <button onclick="addNewSField()" class="btn btn-danger btn-sm">Add</button>
+                </div>
+            </div>
+
+            <div class="form-group mt-3" id="aq">
+                <label for="">Academic Qualification</label>
+                <textarea  placeholder="Enter here" class="form-control aqField" rows="3"></textarea>     
+                <div class="container text-center mt-2" id="aqAddButton">
+                    <button onclick="addNewAQField()" class="btn btn-danger btn-sm">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-success btn mt-2">Generate CV</button>
+        </div>
+    </div>
+
+    <!--cv template-->
+    <div class="container" id="cv-template">
+
+        <div class="row">
+
+            <div class="col-md text-center py-5 " style="color: white;">
+                 <img src="https://i.pinimg.com/474x/65/25/a0/6525a08f1df98a2e3a545fe2ace4be47.jpg" class="img-fluid pfp">
+                 <div class="container">
+                     <p id="nameT1">Kunj Patel</p>
+                     <p id="contactT">+919892916429,+919769440834</p>
+                     <p id="addressT">50/B Sector 4 Noida,INDIA</p>
+                     <hr>
+                     <p><a id="linkedT" href="#1">https://wwww.LinkedIn.com/Kunj</a></p>
+                     <p><a id="gT" href="#1">https://wwww.GitHub.com/Kunj</a></p>
+                     <p><a id="fbT" href="#1">https://wwww.Facebook.com/Kunj</a></p>
+                     
+                     
+                    <!--<div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Languages </h3>
+                        </div>
+                        <div class="card-body">
+                            <ul id="lT">
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                            </ul>
+                        </div>
+                    </div>-->
+
+
+                </div>
+            </div>
+            <div class="col-md-8 py-5" style="color:black">
+            <h1 id="nameT2" class="text-center" style="font-weight: 980; color:white">Kunj Patel</h1>
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Email ID </h3>
+                    </div>
+                    <div id="eT" class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi fugiat natus facere. Illo mollitia assumenda laborum quisquam vero recusandae, magnam eos repudiandae, aliquam iste aspernatur est accusantium ut quas, totam aliquid corrupti temporibus. Expedita assumenda consectetur repellendus soluta! Praesentium, rerum amet obcaecati modi asperiores ea ex? Necessitatibus officia totam maiores?</p>
+                    </div>
+                </div>
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Skills </h3>
+                        </div>
+                        <div class="card-body">
+                            <ul id="sT">
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Academic Qualification </h3>
+                        </div>
+                        <div class="card-body">
+                            <ul id="aqT">
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, dolores.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container mt-3 text-center">
+                        <button onclick="printCV()" class="btn btn-success">
+                            Print CV
+                        </button>
+                    </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>  
